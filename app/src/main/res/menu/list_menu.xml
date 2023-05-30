@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search_view"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always"
+        android:title="Поиск"
+        />
+    <item
+        android:id="@+id/action_sort"
+        app:showAsAction="ifRoom"
+        android:title="Sort"
+        android:icon="@drawable/ic_sort_descending"
+        />
+    <item
+        android:title="Добавить занятие"
+        android:id="@+id/action_add_task"
+        />
+    <item
+        android:title="Сортировка"
+        />
+    <group
+        android:checkableBehavior="single"
+        >
+        <item
+            android:title="По корпусу"
+            android:id="@+id/action_sort_by_time"
+            />
+        <item
+            android:title="По дате"
+            android:id="@+id/action_sort_by_creation_date"
+            />
+    </group>
+</menu>
